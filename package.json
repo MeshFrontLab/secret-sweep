@@ -1,0 +1,44 @@
+{
+  "name": "@meshfrontlab/secret-sweep",
+  "version": "0.1.0",
+  "description": "Find leaked API keys, tokens and passwords before they ship. Zero dependencies, works as a pre-commit hook or in CI.",
+  "type": "module",
+  "bin": {
+    "secret-sweep": "bin/secret-sweep.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "sweep": "node bin/secret-sweep.js ."
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "secrets",
+    "security",
+    "pre-commit",
+    "git-hook",
+    "scanner",
+    "api-key",
+    "token",
+    "ci"
+  ],
+  "author": "MESHFRONT LTD",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeshFrontLab/secret-sweep.git"
+  },
+  "homepage": "https://github.com/MeshFrontLab/secret-sweep#readme",
+  "bugs": "https://github.com/MeshFrontLab/secret-sweep/issues"
+}

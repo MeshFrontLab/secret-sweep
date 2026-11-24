@@ -1,0 +1,6 @@
+- id: secret-sweep
+  name: secret-sweep
+  description: Block commits that contain API keys, tokens or passwords.
+  entry: secret-sweep
+  language: node
+  pass_filenames: true
